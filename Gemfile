@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '>= 2.5.0', '< 3.0.0'
+
+ruby '2.7.2'
 
 gem 'pkg-config', '~> 1.4'
 
@@ -89,10 +90,8 @@ gem 'sidekiq-unique-jobs', '~> 6.0'
 gem 'sidekiq-bulk', '~>0.2.0'
 gem 'simple-navigation', '~> 4.1'
 gem 'simple_form', '~> 5.0'
-gem 'sprockets-rails', '~> 3.2', require: 'sprockets/railtie'
 gem 'stoplight', '~> 2.2.1'
 gem 'strong_migrations', '~> 0.7'
-gem 'tty-prompt', '~> 0.23', require: false
 gem 'twitter-text', '~> 1.14'
 gem 'tzinfo-data', '~> 1.2020'
 gem 'webpacker', '~> 5.2'
@@ -102,6 +101,14 @@ gem 'webauthn', '~> 3.0.0.alpha1'
 gem 'json-ld'
 gem 'json-ld-preloaded', '~> 3.1'
 gem 'rdf-normalize', '~> 0.4'
+
+gem 'xorcist', '~> 1.1'
+gem 'pluck_each', '~> 0.1.3'
+
+gem 'sprockets-rails', '~> 3.2', require: 'sprockets/railtie'
+gem 'tty-prompt', '~> 0.23', require: false
+gem 'concurrent-ruby', require: false
+gem 'connection_pool', require: false
 
 group :development, :test do
   gem 'fabrication', '~> 2.21'
@@ -156,8 +163,3 @@ group :production do
   gem 'redis-rails', '~> 5.0'
 end
 
-gem 'concurrent-ruby', require: false
-gem 'connection_pool', require: false
-
-gem 'xorcist', '~> 1.1'
-gem 'pluck_each', '~> 0.1.3'
