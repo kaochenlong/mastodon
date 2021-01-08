@@ -707,7 +707,7 @@ DEPENDENCIES
   capybara (~> 3.34)
   charlock_holmes (~> 0.7.7)
   chewy (~> 5.1)
-  cld3 (~> 3.4.1)
+  cld3
   climate_control (~> 0.2)
   color_diff (~> 0.1)
   concurrent-ruby
